@@ -3,6 +3,7 @@ import Blog from "@/models/blog";
 import { NextResponse } from "next/server";
 
 export async function GET(req, params) {
+  console.log("comming to get")
   console.log(params);
   const {
     params: { id },

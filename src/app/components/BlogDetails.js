@@ -8,6 +8,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import { useRouter } from "next/navigation";
 
 const BlogDetails = ({ blog: { blog } }) => {
+  console.log("blog is",blog)
   const router = useRouter();
   const { toast } = useToast();
   const id = blog?._id;
