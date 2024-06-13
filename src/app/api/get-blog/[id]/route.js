@@ -12,7 +12,7 @@ export async function GET(req, params) {
     await connectToDb();
 
     const blog = await Blog.findById(id);
-    // console.log(blog);
+    console.log(blog);
     return NextResponse.json({
       success: true,
       blog,
