@@ -18,7 +18,7 @@ const AddNewBlog = () => {
       body,
       image,
     };
-    const response = await fetch("http://localhost:3000/api/add-blog", {
+    const response = await fetch("https://opnextblog.vercel.app/api/add-blog", {
       method: "POST",
       body: JSON.stringify(blogFormData),
     });

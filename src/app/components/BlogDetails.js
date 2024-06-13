@@ -16,7 +16,7 @@ const BlogDetails = ({ blog: { blog } }) => {
     try {
       if (!id) return;
       const response = await fetch(
-        `http://localhost:3000/api/add-blog?id=${id}`,
+        `https://opnextblog.vercel.app/add-blog?id=${id}`,
         {
           method: "PUT",
         }
@@ -27,7 +27,7 @@ const BlogDetails = ({ blog: { blog } }) => {
   const deleteBlog = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/delete-blog?id=${id}`,
+        `https://opnextblog.vercel.app/api/delete-blog?id=${id}`,
         {
           method: "DELETE",
         }

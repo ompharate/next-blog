@@ -7,7 +7,7 @@ const Page = ({ params }) => {
   const getBlogById = async () => {
     // console.log(params);
     const response = await fetch(
-      `http://localhost:3000/api/get-blog/${params.id}`
+      `https://opnextblog.vercel.app/api/get-blog/${params.id}`
     );
     const data = await response.json();
     // console.log(data);
